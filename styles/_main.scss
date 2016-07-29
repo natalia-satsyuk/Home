@@ -1163,6 +1163,11 @@ $adress_font: 13px Roboto-Condensed-Regular;
 .footer-map {
 	padding-right: 0;
     padding-left: 0;
+
+    @media screen and (max-width: 992px) and (min-width: 769px){
+    	line-height: 0;
+    	font-size: 0;
+    }
     
 	iframe {
 		width: 100%;
