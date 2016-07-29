@@ -51,6 +51,10 @@ $adress_font: 13px Roboto-Condensed-Regular;
 	text-transform: uppercase;
 	color: #fff;
 
+	@media screen and (max-width: 992px) and (min-width: 769px){
+		font: 12px Roboto-Condensed-Light;
+	}
+
 	p {
 		line-height: 14px;
 		margin: 0;
@@ -164,6 +168,78 @@ $adress_font: 13px Roboto-Condensed-Regular;
 
 /*---HEADER---*/
 
+.header-row {
+	position: relative;
+
+	.header-menu-list {
+		display: none;
+		position: absolute;
+		top: 10%;
+		right: 8.3%;
+		z-index: 2;
+		background-color: #F8C255;
+
+		@media screen and (max-width: 1200px) and (min-width: 993px){
+			top: 5%;
+   			right: 8%;
+		}
+
+		@media screen and (max-width: 992px) and (min-width: 769px){
+			top: 10%;
+			right: 8%;
+		}
+
+		ul {
+			list-style: none;
+			float: left;
+			margin-bottom: 0;
+			padding: 40px 20px;
+
+			@media screen and (max-width: 1200px) and (min-width: 993px){
+			padding: 30px 10px;
+			}
+
+			@media screen and (max-width: 992px) and (min-width: 769px){
+				padding: 20px 0;
+			}
+
+			li {
+				display: inline;
+				
+				a {
+					color: #fff;
+					font: 14px Roboto-Condensed-Regular;
+					font-weight: 400;
+					line-height: 25px;
+					text-transform: uppercase;
+					margin: 20px;
+
+					@media screen and (max-width: 992px) and (min-width: 769px){
+						font: 13px Roboto-Condensed-Light;
+						margin: 15px;
+					}
+				}
+			}
+		}
+
+		.menu-list-close {
+			padding: 35px;
+			font-size: 35px;
+    		color: #fff;
+    		cursor: pointer;
+
+    		@media screen and (max-width: 1200px) and (min-width: 993px){
+    			padding: 25px;
+    		}
+
+    		@media screen and (max-width: 992px) and (min-width: 769px){
+    			padding: 18px;
+    			font-size: 30px;
+    		}
+		}
+	}
+}
+
 .header-img {
 	position: relative;
 	padding: 0;
@@ -176,6 +252,29 @@ $adress_font: 13px Roboto-Condensed-Regular;
 		position: absolute;
 		top: 50px;
 		left: 170px; 
+
+		@media screen and (max-width: 1200px) and (min-width: 993px){
+			top: 25px;
+			left: 100px; 
+			
+			.logo-socials {
+				padding-top: 35px;
+				padding-left: 20px;
+			}	
+		}
+
+		@media screen and (max-width: 992px) and (min-width: 769px){
+			
+			top: 25px;
+			left: 25px; 
+			
+			.logo-socials {
+				float: right;
+				padding-top: 0;
+				margin-top:-35px;
+			}	
+		}
+
 
 		.logo-image {
 			width: 70%;
@@ -190,7 +289,11 @@ $adress_font: 13px Roboto-Condensed-Regular;
 
 	@media screen and (max-width: 1200px) and (min-width: 993px){
 		height: 327px;
+	}
 
+	@media screen and (max-width: 992px) and (min-width: 769px){
+		height: 252px;
+		background: $socials_color;
 	}
 
 	.header-menu-for-icon {
@@ -210,66 +313,27 @@ $adress_font: 13px Roboto-Condensed-Regular;
 				margin-top: 20px;
 			}
 
-		}
-	}
-
-	.header-menu-list {
-		display: none;
-		position: absolute;
-		top: 10%;
-		left: -103%;
-		z-index: 2;
-		background-color: #F8C255;
-
-		@media screen and (max-width: 1200px) and (min-width: 993px){
-			top: 5%;
-    		left: -150%;
-		}
-
-		ul {
-			list-style: none;
-			float: left;
-			margin-bottom: 0;
-			padding: 40px 20px;
-
-			@media screen and (max-width: 1200px) and (min-width: 993px){
-				padding: 30px 10px;
+			@media screen and (max-width: 992px) and (min-width: 769px){
+				font-size: 30px;
+				border: 1px solid #fff;
+				margin-top: 30px;
 			}
-
-			li {
-				display: inline;
-				
-				a {
-					color: #fff;
-					font: 14px Roboto-Condensed-Regular;
-					font-weight: 400;
-					line-height: 25px;
-					text-transform: uppercase;
-					margin: 20px;
-				}
-			}
-		}
-
-		.menu-list-close {
-			padding: 35px;
-			font-size: 35px;
-    		color: #fff;
-    		cursor: pointer;
-
-    		@media screen and (max-width: 1200px) and (min-width: 993px){
-    			padding: 25px;
-    		}
 		}
 	}
 
 	.header-adress {
 		position: absolute;
 		bottom: 180px;
-		left: 58px;
+		left: 45px;
 
 		@media screen and (max-width: 1200px) and (min-width: 993px){
 			bottom: 150px;
     		left: 20px;
+		}
+
+		@media screen and (max-width: 992px) and (min-width: 769px){
+			bottom: 70px;
+			left: 25px;
 		}
 	}
 
@@ -277,6 +341,11 @@ $adress_font: 13px Roboto-Condensed-Regular;
 		position: absolute;
 		bottom: 102px;
 		left: 138px;
+
+		@media screen and (max-width: 992px) and (min-width: 769px){
+			bottom: 25px;
+			left: 25px;
+		}
 	}
 }
 /*---END OF HEADER---*/

@@ -34,6 +34,10 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #fff; }
+  @media screen and (max-width: 992px) and (min-width: 769px) {
+    .adress,
+    .number {
+      font: 12px Roboto-Condensed-Light; } }
   .adress p,
   .number p {
     line-height: 14px;
@@ -120,6 +124,60 @@
   text-transform: uppercase; }
 
 /*---HEADER---*/
+.header-row {
+  position: relative; }
+  .header-row .header-menu-list {
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: 8.3%;
+    z-index: 2;
+    background-color: #F8C255; }
+    @media screen and (max-width: 1200px) and (min-width: 993px) {
+      .header-row .header-menu-list {
+        top: 5%;
+        right: 8%; } }
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      .header-row .header-menu-list {
+        top: 10%;
+        right: 8%; } }
+    .header-row .header-menu-list ul {
+      list-style: none;
+      float: left;
+      margin-bottom: 0;
+      padding: 40px 20px; }
+      @media screen and (max-width: 1200px) and (min-width: 993px) {
+        .header-row .header-menu-list ul {
+          padding: 30px 10px; } }
+      @media screen and (max-width: 992px) and (min-width: 769px) {
+        .header-row .header-menu-list ul {
+          padding: 20px 0; } }
+      .header-row .header-menu-list ul li {
+        display: inline; }
+        .header-row .header-menu-list ul li a {
+          color: #fff;
+          font: 14px Roboto-Condensed-Regular;
+          font-weight: 400;
+          line-height: 25px;
+          text-transform: uppercase;
+          margin: 20px; }
+          @media screen and (max-width: 992px) and (min-width: 769px) {
+            .header-row .header-menu-list ul li a {
+              font: 13px Roboto-Condensed-Light;
+              margin: 15px; } }
+    .header-row .header-menu-list .menu-list-close {
+      padding: 35px;
+      font-size: 35px;
+      color: #fff;
+      cursor: pointer; }
+      @media screen and (max-width: 1200px) and (min-width: 993px) {
+        .header-row .header-menu-list .menu-list-close {
+          padding: 25px; } }
+      @media screen and (max-width: 992px) and (min-width: 769px) {
+        .header-row .header-menu-list .menu-list-close {
+          padding: 18px;
+          font-size: 30px; } }
+
 .header-img {
   position: relative;
   padding: 0; }
@@ -129,6 +187,21 @@
     position: absolute;
     top: 50px;
     left: 170px; }
+    @media screen and (max-width: 1200px) and (min-width: 993px) {
+      .header-img .header-logo {
+        top: 25px;
+        left: 100px; }
+        .header-img .header-logo .logo-socials {
+          padding-top: 35px;
+          padding-left: 20px; } }
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      .header-img .header-logo {
+        top: 25px;
+        left: 25px; }
+        .header-img .header-logo .logo-socials {
+          float: right;
+          padding-top: 0;
+          margin-top: -35px; } }
     .header-img .header-logo .logo-image {
       width: 70%; }
 
@@ -140,6 +213,10 @@
   @media screen and (max-width: 1200px) and (min-width: 993px) {
     .header-menu {
       height: 327px; } }
+  @media screen and (max-width: 992px) and (min-width: 769px) {
+    .header-menu {
+      height: 252px;
+      background: #7ACEC3; } }
   .header-menu .header-menu-for-icon {
     text-align: center; }
     .header-menu .header-menu-for-icon .header-menu-icon {
@@ -153,54 +230,31 @@
       @media screen and (max-width: 1200px) and (min-width: 993px) {
         .header-menu .header-menu-for-icon .header-menu-icon {
           margin-top: 20px; } }
-  .header-menu .header-menu-list {
-    display: none;
-    position: absolute;
-    top: 10%;
-    left: -103%;
-    z-index: 2;
-    background-color: #F8C255; }
-    @media screen and (max-width: 1200px) and (min-width: 993px) {
-      .header-menu .header-menu-list {
-        top: 5%;
-        left: -150%; } }
-    .header-menu .header-menu-list ul {
-      list-style: none;
-      float: left;
-      margin-bottom: 0;
-      padding: 40px 20px; }
-      @media screen and (max-width: 1200px) and (min-width: 993px) {
-        .header-menu .header-menu-list ul {
-          padding: 30px 10px; } }
-      .header-menu .header-menu-list ul li {
-        display: inline; }
-        .header-menu .header-menu-list ul li a {
-          color: #fff;
-          font: 14px Roboto-Condensed-Regular;
-          font-weight: 400;
-          line-height: 25px;
-          text-transform: uppercase;
-          margin: 20px; }
-    .header-menu .header-menu-list .menu-list-close {
-      padding: 35px;
-      font-size: 35px;
-      color: #fff;
-      cursor: pointer; }
-      @media screen and (max-width: 1200px) and (min-width: 993px) {
-        .header-menu .header-menu-list .menu-list-close {
-          padding: 25px; } }
+      @media screen and (max-width: 992px) and (min-width: 769px) {
+        .header-menu .header-menu-for-icon .header-menu-icon {
+          font-size: 30px;
+          border: 1px solid #fff;
+          margin-top: 30px; } }
   .header-menu .header-adress {
     position: absolute;
     bottom: 180px;
-    left: 58px; }
+    left: 45px; }
     @media screen and (max-width: 1200px) and (min-width: 993px) {
       .header-menu .header-adress {
         bottom: 150px;
         left: 20px; } }
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      .header-menu .header-adress {
+        bottom: 70px;
+        left: 25px; } }
   .header-menu .header-number {
     position: absolute;
     bottom: 102px;
     left: 138px; }
+    @media screen and (max-width: 992px) and (min-width: 769px) {
+      .header-menu .header-number {
+        bottom: 25px;
+        left: 25px; } }
 
 /*---END OF HEADER---*/
 /*--- PROJECT ---*/
@@ -640,13 +694,5 @@
     line-height: 22px; }
 
 /*---END OF FOOTER---*/
-@media screen and (max-width: 1200px) and (min-width: 993px) {
-  /* HEADER*/
-  .header-img .header-logo {
-    top: 25px;
-    left: 100px; }
-  .header-img .logo-socials {
-    padding-top: 35px;
-    padding-left: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
