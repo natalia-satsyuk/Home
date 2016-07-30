@@ -9,6 +9,7 @@ $socials_color: #7ACEC3;
 $socials_second_color: #FD5000;
 $adress_font: 13px Roboto-Condensed-Regular;
 
+
 * {
 	box-sizing: border-box;
 }
@@ -225,6 +226,67 @@ $adress_font: 13px Roboto-Condensed-Regular;
 			}
 		}
 	}
+
+@mixin close-icon {
+	display: none;
+	@media screen and (max-width: 768px) and (min-width: 481px){
+		display: block;
+		font-size: 30px;
+		color: #fff;
+		cursor: pointer;
+	}						
+}
+
+@mixin pop-up-list {
+	@media screen and (max-width: 768px) and (min-width: 481px){
+		position: absolute;
+		top: 10%;
+		left: 2%;
+		z-index: 5;
+		background: $socials_color;
+		padding: 10px 0 20px;
+		text-align: center; 
+		display: none;
+	}
+}
+
+@mixin menu-icon {
+	display: none;
+
+	@media screen and (max-width: 768px) and (min-width: 320px){				
+		display: block;	
+		font-size: 25px;
+		color: #fff;
+		padding-left: 55px;
+		cursor: pointer;
+		line-height: 70px;
+	}
+}
+
+@mixin pop-up-link($pop-up-margin) {
+	@media screen and (max-width: 768px) and (min-width: 481px){
+		font: 14px Roboto-Condensed-Regular;
+		color: #fff;
+		font-weight: 400;
+		text-transform: uppercase;
+		line-height: 30px;
+		margin: $pop-up-margin;
+
+		&:hover {
+			text-decoration: underline;
+			color: #fff;
+
+			&:hover:before {
+				content: "";
+				margin-left: 0;
+				padding-right: 0;
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+
 
 
 /*---HEADER---*/
@@ -519,15 +581,7 @@ $adress_font: 13px Roboto-Condensed-Regular;
 				}
 
 				.project-menu-icon {
-					display: none;
-
-					@media screen and (max-width: 768px) and (min-width: 320px){				display: block;	
-						font-size: 25px;
-						color: #fff;
-						padding-left: 55px;
-						cursor: pointer;
-						line-height: 70px;
-					}
+					@include menu-icon;
 				}		
 
 				.name-list {
@@ -550,29 +604,12 @@ $adress_font: 13px Roboto-Condensed-Regular;
 						top: 15%;
    						left: 15%;
 					}
-
-					@media screen and (max-width: 768px) and (min-width: 481px){
-						top: 10%;
-						left: 2%;
-						z-index: 5;
-						background: $socials_color;
-						padding: 10px 0 20px;
-						text-align: center; 
-						display: none;
-					}
-
-					.project-list-close {
-						display: none;
-
-						@media screen and (max-width: 768px) and (min-width: 481px){
-							display: block;
-							font-size: 30px;
-							color: #fff;
-							cursor: pointer;
-						}						
-					}
-
 					
+					@include pop-up-list;	
+
+					.close-icon {
+						@include close-icon;
+					}
 
 					.name-link {
 						@media screen and (max-width: 992px) and (min-width: 769px){
@@ -580,25 +617,12 @@ $adress_font: 13px Roboto-Condensed-Regular;
 							font: 13px Roboto-Condensed-Light;
 							line-height: 21px;
 						}
-
-						@media screen and (max-width: 768px) and (min-width: 481px){
-							font-size: 14px;
-							line-height: 30px;
-							margin: 20px;
-
-							&:hover {
-								text-decoration: underline;
-								color: #fff;
-
-								&:hover:before {
-									content: "";
-									margin-left: 0;
-									padding-right: 0;
-									padding-left: 0;
-								}
-							}
-						}
 					}	
+
+					.pop-up-link {
+
+						@include pop-up-link(20px);
+					}
 				}
 
 				.left-up-first-header {
@@ -812,6 +836,10 @@ $adress_font: 13px Roboto-Condensed-Regular;
 					top: 22%;
 					left: 50%;
 
+					@media screen and (max-width: 768px) and (min-width: 481px){
+						top: 55%;
+					}					
+
 					.block-downer {
 						padding-top: 30px;
 						margin-left: -25px;
@@ -941,6 +969,11 @@ $adress_font: 13px Roboto-Condensed-Regular;
 				height: 157px;
 			}
 
+			@media screen and (max-width: 768px) and (min-width: 481px){
+				height: 70px;
+				background: #EBB240;  
+			}
+
 			.right-item-4-text {
 				position: absolute;
 				top: 20%;
@@ -954,6 +987,22 @@ $adress_font: 13px Roboto-Condensed-Regular;
 				@media screen and (max-width: 992px) and (min-width: 769px){
 					top: 18%;
    					left: 70%;
+				}
+
+				@media screen and (max-width: 768px) and (min-width: 481px){
+					position: static;
+
+					p {					
+						text-align: center;
+						line-height: 70px;
+						font: 30px Roboto-Condensed-Regular;
+						color: #fff;
+						margin-top: -52px;
+					}
+
+					.project-menu-icon {
+						@include menu-icon;
+					}
 				}
 
 				.name-list {
@@ -974,8 +1023,20 @@ $adress_font: 13px Roboto-Condensed-Regular;
 
 							@media screen and (max-width: 992px) and (min-width: 769px){
 								line-height: 21px;
-							}	
+							}
 						}
+					}
+
+					@include pop-up-list;
+
+						.pop-up-link {
+							
+							@include pop-up-link(40px);
+						}
+
+
+					.close-icon {
+						@include close-icon;
 					}	
 				}	
 			}

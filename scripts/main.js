@@ -8,9 +8,9 @@ $(".menu-list-close").click(function() {
 
 
 $(".project-menu-icon").click(function() {
-	$(".left-up-first-text").slideDown(400);
+	$(".pop-up-list").slideDown(400);
 });
 
-$(".project-list-close").click(function() {
-	$(".left-up-first-text").slideUp(400);
+$(".close-icon").click(function() {
+	$(".pop-up-list").slideUp(400);
 });
