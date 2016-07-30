@@ -194,7 +194,6 @@ $adress_font: 13px Roboto-Condensed-Regular;
 
 .block-height {
 		position: relative;
-		
 		height: 472px;
 
 		@media screen and (max-width: 1200px) and (min-width: 993px){
@@ -207,7 +206,6 @@ $adress_font: 13px Roboto-Condensed-Regular;
 
 		@media screen and (max-width: 768px) and (min-width: 481px){
 			height: 70px;
-			
 		}
 
 		@media screen and (max-width: 480px) and (min-width: 320px){
@@ -289,8 +287,7 @@ $adress_font: 13px Roboto-Condensed-Regular;
 @mixin menu-icon {
 	display: none;
 
-	@media screen and (max-width: 768px) and (min-width: 481px){				
-		display: block;	
+	@media screen and (max-width: 768px) and (min-width: 481px){		display: block;	
 		font-size: 25px;
 		color: #fff;
 		padding-left: 55px;
@@ -298,8 +295,7 @@ $adress_font: 13px Roboto-Condensed-Regular;
 		line-height: 70px;
 	}
 
-	@media screen and (max-width: 480px) and (min-width: 320px){				
-		display: block;	
+	@media screen and (max-width: 480px) and (min-width: 320px){		display: block;	
 		font-size: 25px;
 		color: #fff;
 		padding-left: 55px;
@@ -354,7 +350,6 @@ $adress_font: 13px Roboto-Condensed-Regular;
 
 
 
-
 /*---HEADER---*/
 
 .header-row {
@@ -379,8 +374,8 @@ $adress_font: 13px Roboto-Condensed-Regular;
 		}
 
 		@media screen and (max-width: 768px) and (min-width: 481px){
-			top: 51%;
-			right: 40%;
+			top: 85%;
+			right: 85%;
 		}
 
 		@media screen and (max-width: 480px) and (min-width: 320px){
@@ -573,7 +568,7 @@ $adress_font: 13px Roboto-Condensed-Regular;
 	}
 
 	@media screen and (max-width: 768px) and (min-width: 481px){
-		height: 252px;
+		height: 70px;
 		background: $socials_color;
 	}
 
@@ -585,7 +580,7 @@ $adress_font: 13px Roboto-Condensed-Regular;
 	.header-menu-for-icon {
 		text-align: center;
 
-		@media screen and (max-width: 480px) and (min-width: 320px){
+		@media screen and (max-width: 768px) and (min-width: 320px){
 			text-align: left;
 		}
 
@@ -607,20 +602,46 @@ $adress_font: 13px Roboto-Condensed-Regular;
 				border: 1px solid #fff;
 				margin-top: 30px;
 			}
-
+		
 			@media screen and (max-width: 768px) and (min-width: 481px){
-				font-size: 30px;
-				border: 1px solid #fff;
-				margin-top: 30px;
-				padding:30px;
+				font-size: 25px;
+				border: none;
+				margin-top: 0;
+				padding-top: 24px;
+				padding-left: 40px;
 			}
 
 			@media screen and (max-width: 480px) and (min-width: 320px){
 				font-size: 25px;
 				border: none;
 				margin-top: 0;
+				padding-top: 14px;
 				padding-left: 40px;
-				line-height: 9px;
+			}
+		}
+
+		.name-list-item {
+			display: none;
+
+			@media screen and (max-width: 768px) and (min-width: 481px){
+				display: block;
+				text-align: left;
+			    font: 30px Roboto-Condensed-Regular;
+			    color: #fff;
+			    padding-top: 15px;
+			    float: right;
+			    width: 55%;
+			}
+
+			@media screen and (max-width: 480px) and (min-width: 320px){
+				display: block;
+				text-align: left;
+			    font: 24px Roboto-Condensed-Regular;
+			    color: #fff;
+			    padding-top: 9px;
+			    margin-bottom: 0;
+			    float: right;
+			    width: 55%;
 			}
 		}
 	}
@@ -1239,7 +1260,7 @@ $adress_font: 13px Roboto-Condensed-Regular;
 
 	@media screen and (max-width: 1200px) and (min-width: 993px){
 		padding: 20px 0;	
-		}
+	}
 
 	.studio-name {
 		background: linear-gradient(-47deg, #FF9B6D 49.5%, #fff 49.5%, #FF9B6D 50%);
@@ -1250,12 +1271,10 @@ $adress_font: 13px Roboto-Condensed-Regular;
 		}
 
 		@media screen and (max-width: 992px) and (min-width: 769px){
-			
 			background: #FF9B6D;
 		}
 
 		@media screen and (max-width: 768px) and (min-width: 320px){
-		
 			background: #FF9B6D;
 		}
 
@@ -1312,7 +1331,6 @@ $adress_font: 13px Roboto-Condensed-Regular;
 				text-align: justify;
 				font-size: 16px;
 			}
-
 		}
 
 		.studio-text-down {
@@ -1374,6 +1392,10 @@ $adress_font: 13px Roboto-Condensed-Regular;
 		    @media screen and (max-width: 992px) and (min-width: 320px){
 		    	margin-right: 0;
 		    }
+
+		    @media screen and (max-width: 768px) and (min-width: 320px){
+		    	font-size: 14px;
+			}
 		}
 
 		ul {
@@ -1570,7 +1592,6 @@ $adress_font: 13px Roboto-Condensed-Regular;
 	}
 
 	.news-name {
-		
 		background: linear-gradient(-47deg, #D4EDBF 49.5%, #fff 49.5%, #D4EDBF 50%);
 		
 
@@ -1770,16 +1791,12 @@ $adress_font: 13px Roboto-Condensed-Regular;
 			padding-top: 15px;
 		}
 
-		@media screen and (max-width: 768px) and (min-width: 481px){
-			float: right;
-			padding-top: 0;
+		@media screen and (max-width: 768px) and (min-width: 320px){
+			float: none;
+			width: 100%;
+			text-align: center;
 		}
-
-		@media screen and (max-width: 480px) and (min-width: 320px){
-			float: right;
-			padding-top: 0;
-		}
-
+		
 		.adress,
 		.number {
 			color: #333;
@@ -1798,6 +1815,27 @@ $adress_font: 13px Roboto-Condensed-Regular;
 			padding-left: 30px;
 		}
 
+		@media screen and (max-width: 768px) and (min-width: 320px){
+	    	padding-top: 25px;
+	    	padding-left: 0;
+	    	width: 100%;
+	    	float: none;
+	    	text-align: center;
+
+	    	.logo-image {
+	    		width: 15%;
+	    	}
+
+	    	.logo-socials {
+				padding-top: 0;
+				padding-left: 0;
+
+				.logo-socials-link {
+					margin: 15px;
+				}
+			}
+		}
+
 		@media screen and (max-width: 1200px) and (min-width: 993px){
 			img {
 				width: 70%;
@@ -1807,17 +1845,6 @@ $adress_font: 13px Roboto-Condensed-Regular;
 		@media screen and (max-width: 992px) and (min-width: 769px){
 			img {
 				width: 70%;
-			}
-
-			.logo-socials {
-				padding-top: 0;
-				padding-left: 0;
-			}
-		}
-
-		@media screen and (max-width: 768px) and (min-width: 320px){
-			img {
-				width: 40%;
 			}
 
 			.logo-socials {
@@ -1846,6 +1873,7 @@ $adress_font: 13px Roboto-Condensed-Regular;
 		@media screen and (max-width: 768px) and (min-width: 320px){
 			padding-top: 40px;
 			line-height: 14px;
+			text-align: center;
 		}
 	}
 }
