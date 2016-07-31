@@ -185,7 +185,7 @@
   .header-row .header-menu-list {
     display: none;
     position: absolute;
-    top: 10%;
+    top: 8.5%;
     right: 8.3%;
     z-index: 2;
     background-color: #F8C255; }
@@ -1311,6 +1311,9 @@
       background: #E9EAE2; } }
   .footer-map iframe {
     width: 100%; }
+    @media screen and (max-width: 768px) and (min-width: 320px) {
+      .footer-map iframe {
+        height: 300px; } }
 
 .footer-info {
   background-color: #E9EAE2;

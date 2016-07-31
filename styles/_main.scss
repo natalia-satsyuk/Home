@@ -349,7 +349,7 @@ $adress_font: 13px Roboto-Condensed-Regular;
 	.header-menu-list {
 		display: none;
 		position: absolute;
-		top: 10%;
+		top: 8.5%;
 		right: 8.3%;
 		z-index: 2;
 		background-color: #F8C255;
@@ -1234,7 +1234,7 @@ $adress_font: 13px Roboto-Condensed-Regular;
 	padding-bottom: 40px;
 
 	@media screen and (max-width: 1200px) and (min-width: 993px){
-		padding-bottom: 20px;	
+		padding-bottom: 20px;
 	}
 
 	.studio-name {
@@ -1728,6 +1728,10 @@ $adress_font: 13px Roboto-Condensed-Regular;
         
 	iframe {
 		width: 100%;
+
+		@media screen and (max-width: 768px) and (min-width: 320px){
+			height: 300px;
+	    }	
 	}
 }
 
