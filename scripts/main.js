@@ -22,7 +22,7 @@ $(".project-menu-icon").click(function() {
 });
 
 $(".close-icon").click(function() {
-	$(this).parent(".pop-up-list").slideUp(400);
+	$(this).parent(".pop-up-list").slideUp(400, function() {$(this).removeAttr("style")});
 });
 
 $(window).on("load resize", function() {
@@ -34,7 +34,7 @@ $(window).on("load resize", function() {
 
 function setHeightFromContentBlock() {
 	if ($(document).width() > 768) {
-		$(this).find(".block-height-resize").removeAttr("style")
+		$(this).find(".block-height-resize").removeAttr("style");
 		var height = $(this).height();
 		$(this).find(".block-height-resize").height(height);
 	} else {
