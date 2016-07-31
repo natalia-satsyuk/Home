@@ -194,23 +194,14 @@ $adress_font: 13px Roboto-Condensed-Regular;
 
 .block-height {
 		position: relative;
-		height: 472px;
+		
+			@media screen and (max-width: 768px) and (min-width: 481px){
+				height: 70px;
+			}
 
-		@media screen and (max-width: 1200px) and (min-width: 993px){
-			height: 397px;	
-		}
-
-		@media screen and (max-width: 992px) and (min-width: 769px){
-			height: 100px;
-		}
-
-		@media screen and (max-width: 768px) and (min-width: 481px){
-			height: 70px;
-		}
-
-		@media screen and (max-width: 480px) and (min-width: 320px){
-			height: 50px;
-		}
+			@media screen and (max-width: 480px) and (min-width: 320px){
+				height: 50px;
+			}
 
 		.news-name-header,
 		.studio-name-header {
@@ -550,16 +541,10 @@ $adress_font: 13px Roboto-Condensed-Regular;
 }	
 
 .header-menu {
-	height: 451px;
 	position: relative;
 	background: linear-gradient(-53deg, $socials_color 49.5%, #fff 49.5%, $socials_color 50%);
 
-	@media screen and (max-width: 1200px) and (min-width: 993px){
-		height: 327px;
-	}
-
 	@media screen and (max-width: 992px) and (min-width: 769px){
-		height: 252px;
 		background: $socials_color;
 	}
 
@@ -705,17 +690,8 @@ $adress_font: 13px Roboto-Condensed-Regular;
 			.projects-left-up-first {
 				width: 45%;
 				float: left;
-				height: 449px;
 				position: relative;
 				background: linear-gradient(-47deg, #EBB240 49.5%, #fff 49.5%, #EBB240 50%);
-
-				@media screen and (max-width: 1200px) and (min-width: 993px){
-					height: 327px;
-				}	
-
-				@media screen and (max-width: 992px) and (min-width: 769px){
-					height: 251px;
-				}	
 
 				@media screen and (max-width: 768px) and (min-width: 481px){
 					height: 70px;
@@ -949,97 +925,7 @@ $adress_font: 13px Roboto-Condensed-Regular;
 			}
 		}
 
-		/*--- PROJECT-left-down ---*/
-
-		.projects-left-down {
-			overflow: hidden;
-		
-			.projects-left-down-first {
-				width: 70%;
-				float: left;
-				position: relative;
-
-				@media screen and (max-width: 768px) and (min-width: 320px){
-					float: none;
-					width: 100%;
-				}
-
-				.left-down-first-text {
-					position: absolute;
-					top: 67%;
-					left: 21%;
-
-					@media screen and (max-width: 480px) and (min-width: 320px){
-						top: 70%;
-						left: 8%;
-					} 
-
-					.block-upper {
-						float: left;
-						
-						.name-header {
-							line-height: 18px;
-
-							@media screen and (max-width: 1200px) and (min-width: 993px){
-								line-height: 64px;
-							}
-						}
-					}
-
-					.block-downer {
-						float: left;
-						padding-top: 25px;
-	    				padding-left: 30px;
-
-	    				@media screen and (max-width: 480px) and (min-width: 320px){
-							padding-top: 2px;
-						} 
-
-						.rate {
-							float: right;
-							text-align: center;
-							padding-left: 30px;
-						}
-					}
-				}
-			}
-
-			.projects-left-down-second {
-				width: 30%;
-				float: left;
-				position: relative;
-
-				@media screen and (max-width: 768px) and (min-width: 320px){
-					float: none;
-					width: 100%;
-				}
-
-				.left-down-second-text {
-					position: absolute;
-					top: 22%;
-					left: 50%;
-
-					@media screen and (max-width: 768px) and (min-width: 481px){
-						top: 55%;
-					}
-
-					@media screen and (max-width: 480px) and (min-width: 320px){
-						top: 37%;
-						left: 57%;
-					}					
-
-					.block-downer {
-						padding-top: 30px;
-						margin-left: -25px;
-
-						.rate {
-							text-align: center;
-							padding-top: 20px;
-						}
-					}
-				}
-			}
-		}			
+				
 	}
 
 /*--- PROJECT-right ---*/	
@@ -1143,20 +1029,106 @@ $adress_font: 13px Roboto-Condensed-Regular;
 				}
 			}
 		}
+	}
 
-		.projects-right-item-4 {
+	/*--- PROJECTS-DOWN---*/	
+
+	.projects-down {
+			overflow: hidden;
+
+		.projects-down-first {
+			width: 49%;
+			float: left;
+			position: relative;
+
+			@media screen and (max-width: 768px) and (min-width: 320px){
+				float: none;
+				width: 100%;
+			}
+
+			.down-first-text {
+				position: absolute;
+				top: 67%;
+				left: 21%;
+
+				@media screen and (max-width: 480px) and (min-width: 320px){
+					top: 70%;
+					left: 8%;
+				} 
+
+				.block-upper {
+					float: left;
+					
+					.name-header {
+						line-height: 18px;
+
+						@media screen and (max-width: 1200px) and (min-width: 993px){
+							line-height: 64px;
+						}
+					}
+				}
+
+				.block-downer {
+					float: left;
+					padding-top: 25px;
+    				padding-left: 30px;
+
+    				@media screen and (max-width: 480px) and (min-width: 320px){
+						padding-top: 2px;
+					} 
+
+					.rate {
+						float: right;
+						text-align: center;
+						padding-left: 30px;
+					}
+				}
+			}
+		}
+
+		.projects-down-second {
+			width: 20%;
+			float: left;
+			position: relative;
+
+			@media screen and (max-width: 768px) and (min-width: 320px){
+				float: none;
+				width: 100%;
+			}
+
+			.down-second-text {
+				position: absolute;
+				top: 22%;
+				left: 50%;
+
+				@media screen and (max-width: 768px) and (min-width: 481px){
+					top: 55%;
+				}
+
+				@media screen and (max-width: 480px) and (min-width: 320px){
+					top: 37%;
+					left: 57%;
+				}					
+
+				.block-downer {
+					padding-top: 30px;
+					margin-left: -25px;
+
+					.rate {
+						text-align: center;
+						padding-top: 20px;
+					}
+				}
+			}
+		}
+
+		.projects-down-third {
+
+			width: 31%;
+			float: left;
 			position: relative;
 			background: linear-gradient(-40deg, #EBB240 55.5%, #fff 55.5%, #EBB240 56%);
-			height: 279px;
-
-			@media screen and (max-width: 1200px) and (min-width: 993px){
-				height: 205px;
-			}
-
-			@media screen and (max-width: 993px) and (min-width: 769px){
-				height: 157px;
-			}
-
+		
 			@media screen and (max-width: 768px) and (min-width: 481px){
 				height: 70px;
 				background: #EBB240;  
@@ -1167,7 +1139,7 @@ $adress_font: 13px Roboto-Condensed-Regular;
 				background: #EBB240;  
 			}
 
-			.right-item-4-text {
+			.down-third-text {
 				position: absolute;
 				top: 20%;
 				left: 22%;
@@ -1244,10 +1216,10 @@ $adress_font: 13px Roboto-Condensed-Regular;
 					}	
 				}	
 			}
-		}			
+		}
 	}
 }
-/*---END OF PROJECT---*/
+/*---END OF PROJECTS---*/
 
 /*---STUDIO---*/
 
@@ -1261,11 +1233,6 @@ $adress_font: 13px Roboto-Condensed-Regular;
 	.studio-name {
 		background: linear-gradient(-47deg, #FF9B6D 49.5%, #fff 49.5%, #FF9B6D 50%);
 		
-
-		@media screen and (max-width: 1200px) and (min-width: 993px){
-			height: 400px;
-		}
-
 		@media screen and (max-width: 992px) and (min-width: 769px){
 			background: #FF9B6D;
 		}
@@ -1738,24 +1705,6 @@ $adress_font: 13px Roboto-Condensed-Regular;
         
 	iframe {
 		width: 100%;
-		height: 100%;
-		height: 625px;
-
-		@media screen and (max-width: 1200px) and (min-width: 993px){
-			height: 522px;	
-		}
-
-		@media screen and (max-width: 992px) and (min-width: 769px){
-			height: 368px;
-		}
-
-		@media screen and (max-width: 768px) and (min-width: 481px){
-			height: 300px;
-		}
-
-		@media screen and (max-width: 480px) and (min-width: 320px){
-			height: 250px;
-		}
 	}
 }
 

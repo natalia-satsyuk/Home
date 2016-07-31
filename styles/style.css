@@ -143,14 +143,7 @@
   text-transform: uppercase; }
 
 .block-height {
-  position: relative;
-  height: 472px; }
-  @media screen and (max-width: 1200px) and (min-width: 993px) {
-    .block-height {
-      height: 397px; } }
-  @media screen and (max-width: 992px) and (min-width: 769px) {
-    .block-height {
-      height: 100px; } }
+  position: relative; }
   @media screen and (max-width: 768px) and (min-width: 481px) {
     .block-height {
       height: 70px; } }
@@ -337,16 +330,11 @@
           margin-right: 15px; } }
 
 .header-menu {
-  height: 451px;
   position: relative;
   background: -webkit-linear-gradient(143deg, #7ACEC3 49.5%, #fff 49.5%, #7ACEC3 50%);
   background: linear-gradient(-53deg, #7ACEC3 49.5%, #fff 49.5%, #7ACEC3 50%); }
-  @media screen and (max-width: 1200px) and (min-width: 993px) {
-    .header-menu {
-      height: 327px; } }
   @media screen and (max-width: 992px) and (min-width: 769px) {
     .header-menu {
-      height: 252px;
       background: #7ACEC3; } }
   @media screen and (max-width: 768px) and (min-width: 481px) {
     .header-menu {
@@ -444,13 +432,13 @@
 .container-projects {
   width: 100%
   /*--- PROJECT-left ---*/
-  /*--- PROJECT-right ---*/ }
+  /*--- PROJECT-right ---*/
+  /*--- PROJECTS-DOWN---*/ }
   .container-projects .projects-left {
     width: 69%;
     float: left
     /*--- PROJECT-left-up ---*/
-    /*--- PROJECT-left-center ---*/
-    /*--- PROJECT-left-down ---*/ }
+    /*--- PROJECT-left-center ---*/ }
     @media screen and (max-width: 768px) and (min-width: 320px) {
       .container-projects .projects-left {
         float: none;
@@ -460,16 +448,9 @@
       .container-projects .projects-left .projects-left-up .projects-left-up-first {
         width: 45%;
         float: left;
-        height: 449px;
         position: relative;
         background: -webkit-linear-gradient(137deg, #EBB240 49.5%, #fff 49.5%, #EBB240 50%);
         background: linear-gradient(-47deg, #EBB240 49.5%, #fff 49.5%, #EBB240 50%); }
-        @media screen and (max-width: 1200px) and (min-width: 993px) {
-          .container-projects .projects-left .projects-left-up .projects-left-up-first {
-            height: 327px; } }
-        @media screen and (max-width: 992px) and (min-width: 769px) {
-          .container-projects .projects-left .projects-left-up .projects-left-up-first {
-            height: 251px; } }
         @media screen and (max-width: 768px) and (min-width: 481px) {
           .container-projects .projects-left .projects-left-up .projects-left-up-first {
             height: 70px;
@@ -701,67 +682,6 @@
             .container-projects .projects-left .projects-left-center .projects-left-center-second .left-center-second-text .block-downer .rate {
               text-align: center;
               padding-top: 20px; }
-    .container-projects .projects-left .projects-left-down {
-      overflow: hidden; }
-      .container-projects .projects-left .projects-left-down .projects-left-down-first {
-        width: 70%;
-        float: left;
-        position: relative; }
-        @media screen and (max-width: 768px) and (min-width: 320px) {
-          .container-projects .projects-left .projects-left-down .projects-left-down-first {
-            float: none;
-            width: 100%; } }
-        .container-projects .projects-left .projects-left-down .projects-left-down-first .left-down-first-text {
-          position: absolute;
-          top: 67%;
-          left: 21%; }
-          @media screen and (max-width: 480px) and (min-width: 320px) {
-            .container-projects .projects-left .projects-left-down .projects-left-down-first .left-down-first-text {
-              top: 70%;
-              left: 8%; } }
-          .container-projects .projects-left .projects-left-down .projects-left-down-first .left-down-first-text .block-upper {
-            float: left; }
-            .container-projects .projects-left .projects-left-down .projects-left-down-first .left-down-first-text .block-upper .name-header {
-              line-height: 18px; }
-              @media screen and (max-width: 1200px) and (min-width: 993px) {
-                .container-projects .projects-left .projects-left-down .projects-left-down-first .left-down-first-text .block-upper .name-header {
-                  line-height: 64px; } }
-          .container-projects .projects-left .projects-left-down .projects-left-down-first .left-down-first-text .block-downer {
-            float: left;
-            padding-top: 25px;
-            padding-left: 30px; }
-            @media screen and (max-width: 480px) and (min-width: 320px) {
-              .container-projects .projects-left .projects-left-down .projects-left-down-first .left-down-first-text .block-downer {
-                padding-top: 2px; } }
-            .container-projects .projects-left .projects-left-down .projects-left-down-first .left-down-first-text .block-downer .rate {
-              float: right;
-              text-align: center;
-              padding-left: 30px; }
-      .container-projects .projects-left .projects-left-down .projects-left-down-second {
-        width: 30%;
-        float: left;
-        position: relative; }
-        @media screen and (max-width: 768px) and (min-width: 320px) {
-          .container-projects .projects-left .projects-left-down .projects-left-down-second {
-            float: none;
-            width: 100%; } }
-        .container-projects .projects-left .projects-left-down .projects-left-down-second .left-down-second-text {
-          position: absolute;
-          top: 22%;
-          left: 50%; }
-          @media screen and (max-width: 768px) and (min-width: 481px) {
-            .container-projects .projects-left .projects-left-down .projects-left-down-second .left-down-second-text {
-              top: 55%; } }
-          @media screen and (max-width: 480px) and (min-width: 320px) {
-            .container-projects .projects-left .projects-left-down .projects-left-down-second .left-down-second-text {
-              top: 37%;
-              left: 57%; } }
-          .container-projects .projects-left .projects-left-down .projects-left-down-second .left-down-second-text .block-downer {
-            padding-top: 30px;
-            margin-left: -25px; }
-            .container-projects .projects-left .projects-left-down .projects-left-down-second .left-down-second-text .block-downer .rate {
-              text-align: center;
-              padding-top: 20px; }
   .container-projects .projects-right {
     width: 31%;
     float: left; }
@@ -826,59 +746,115 @@
           .container-projects .projects-right .projects-right-item-3 .right-item-3-text .block-downer .rate {
             padding-top: 15px;
             text-align: center; }
-    .container-projects .projects-right .projects-right-item-4 {
+  .container-projects .projects-down {
+    overflow: hidden; }
+    .container-projects .projects-down .projects-down-first {
+      width: 49%;
+      float: left;
+      position: relative; }
+      @media screen and (max-width: 768px) and (min-width: 320px) {
+        .container-projects .projects-down .projects-down-first {
+          float: none;
+          width: 100%; } }
+      .container-projects .projects-down .projects-down-first .down-first-text {
+        position: absolute;
+        top: 67%;
+        left: 21%; }
+        @media screen and (max-width: 480px) and (min-width: 320px) {
+          .container-projects .projects-down .projects-down-first .down-first-text {
+            top: 70%;
+            left: 8%; } }
+        .container-projects .projects-down .projects-down-first .down-first-text .block-upper {
+          float: left; }
+          .container-projects .projects-down .projects-down-first .down-first-text .block-upper .name-header {
+            line-height: 18px; }
+            @media screen and (max-width: 1200px) and (min-width: 993px) {
+              .container-projects .projects-down .projects-down-first .down-first-text .block-upper .name-header {
+                line-height: 64px; } }
+        .container-projects .projects-down .projects-down-first .down-first-text .block-downer {
+          float: left;
+          padding-top: 25px;
+          padding-left: 30px; }
+          @media screen and (max-width: 480px) and (min-width: 320px) {
+            .container-projects .projects-down .projects-down-first .down-first-text .block-downer {
+              padding-top: 2px; } }
+          .container-projects .projects-down .projects-down-first .down-first-text .block-downer .rate {
+            float: right;
+            text-align: center;
+            padding-left: 30px; }
+    .container-projects .projects-down .projects-down-second {
+      width: 20%;
+      float: left;
+      position: relative; }
+      @media screen and (max-width: 768px) and (min-width: 320px) {
+        .container-projects .projects-down .projects-down-second {
+          float: none;
+          width: 100%; } }
+      .container-projects .projects-down .projects-down-second .down-second-text {
+        position: absolute;
+        top: 22%;
+        left: 50%; }
+        @media screen and (max-width: 768px) and (min-width: 481px) {
+          .container-projects .projects-down .projects-down-second .down-second-text {
+            top: 55%; } }
+        @media screen and (max-width: 480px) and (min-width: 320px) {
+          .container-projects .projects-down .projects-down-second .down-second-text {
+            top: 37%;
+            left: 57%; } }
+        .container-projects .projects-down .projects-down-second .down-second-text .block-downer {
+          padding-top: 30px;
+          margin-left: -25px; }
+          .container-projects .projects-down .projects-down-second .down-second-text .block-downer .rate {
+            text-align: center;
+            padding-top: 20px; }
+    .container-projects .projects-down .projects-down-third {
+      width: 31%;
+      float: left;
       position: relative;
       background: -webkit-linear-gradient(130deg, #EBB240 55.5%, #fff 55.5%, #EBB240 56%);
-      background: linear-gradient(-40deg, #EBB240 55.5%, #fff 55.5%, #EBB240 56%);
-      height: 279px; }
-      @media screen and (max-width: 1200px) and (min-width: 993px) {
-        .container-projects .projects-right .projects-right-item-4 {
-          height: 205px; } }
-      @media screen and (max-width: 993px) and (min-width: 769px) {
-        .container-projects .projects-right .projects-right-item-4 {
-          height: 157px; } }
+      background: linear-gradient(-40deg, #EBB240 55.5%, #fff 55.5%, #EBB240 56%); }
       @media screen and (max-width: 768px) and (min-width: 481px) {
-        .container-projects .projects-right .projects-right-item-4 {
+        .container-projects .projects-down .projects-down-third {
           height: 70px;
           background: #EBB240; } }
       @media screen and (max-width: 480px) and (min-width: 320px) {
-        .container-projects .projects-right .projects-right-item-4 {
+        .container-projects .projects-down .projects-down-third {
           height: 50px;
           background: #EBB240; } }
-      .container-projects .projects-right .projects-right-item-4 .right-item-4-text {
+      .container-projects .projects-down .projects-down-third .down-third-text {
         position: absolute;
         top: 20%;
         left: 22%; }
         @media screen and (max-width: 1200px) and (min-width: 993px) {
-          .container-projects .projects-right .projects-right-item-4 .right-item-4-text {
+          .container-projects .projects-down .projects-down-third .down-third-text {
             top: 28%;
             left: 68%; } }
         @media screen and (max-width: 992px) and (min-width: 769px) {
-          .container-projects .projects-right .projects-right-item-4 .right-item-4-text {
+          .container-projects .projects-down .projects-down-third .down-third-text {
             top: 18%;
             left: 70%; } }
         @media screen and (max-width: 768px) and (min-width: 481px) {
-          .container-projects .projects-right .projects-right-item-4 .right-item-4-text {
+          .container-projects .projects-down .projects-down-third .down-third-text {
             position: static; }
-            .container-projects .projects-right .projects-right-item-4 .right-item-4-text p {
+            .container-projects .projects-down .projects-down-third .down-third-text p {
               text-align: center;
               line-height: 70px;
               font: 30px Roboto-Condensed-Regular;
               color: #fff;
               margin-top: -52px; } }
         @media screen and (max-width: 480px) and (min-width: 320px) {
-          .container-projects .projects-right .projects-right-item-4 .right-item-4-text {
+          .container-projects .projects-down .projects-down-third .down-third-text {
             position: static; }
-            .container-projects .projects-right .projects-right-item-4 .right-item-4-text p {
+            .container-projects .projects-down .projects-down-third .down-third-text p {
               text-align: center;
               line-height: 70px;
               font: 24px Roboto-Condensed-Regular;
               color: #fff;
               margin-top: -42px; } }
-        .container-projects .projects-right .projects-right-item-4 .right-item-4-text .project-menu-icon {
+        .container-projects .projects-down .projects-down-third .down-third-text .project-menu-icon {
           display: none; }
           @media screen and (max-width: 768px) and (min-width: 481px) {
-            .container-projects .projects-right .projects-right-item-4 .right-item-4-text .project-menu-icon {
+            .container-projects .projects-down .projects-down-third .down-third-text .project-menu-icon {
               display: block;
               font-size: 25px;
               color: #fff;
@@ -886,7 +862,7 @@
               cursor: pointer;
               line-height: 70px; } }
           @media screen and (max-width: 480px) and (min-width: 320px) {
-            .container-projects .projects-right .projects-right-item-4 .right-item-4-text .project-menu-icon {
+            .container-projects .projects-down .projects-down-third .down-third-text .project-menu-icon {
               display: block;
               font-size: 25px;
               color: #fff;
@@ -894,22 +870,22 @@
               cursor: pointer;
               line-height: 51px; } }
         @media screen and (max-width: 1200px) and (min-width: 320px) {
-          .container-projects .projects-right .projects-right-item-4 .right-item-4-text .name-list {
+          .container-projects .projects-down .projects-down-third .down-third-text .name-list {
             display: block;
             text-align: right; } }
         @media screen and (max-width: 992px) and (min-width: 769px) {
-          .container-projects .projects-right .projects-right-item-4 .right-item-4-text .name-list {
+          .container-projects .projects-down .projects-down-third .down-third-text .name-list {
             text-align: center; } }
         @media screen and (max-width: 992px) and (min-width: 769px) {
-          .container-projects .projects-right .projects-right-item-4 .right-item-4-text .name-list .name-link {
+          .container-projects .projects-down .projects-down-third .down-third-text .name-list .name-link {
             font: 13px Roboto-Condensed-Light;
             line-height: 17px; } }
   @media screen and (max-width: 992px) and (min-width: 769px) and (max-width: 992px) and (min-width: 769px) {
-    .container-projects .projects-right .projects-right-item-4 .right-item-4-text .name-list .name-link {
+    .container-projects .projects-down .projects-down-third .down-third-text .name-list .name-link {
       line-height: 21px; } }
 
         @media screen and (max-width: 768px) and (min-width: 481px) {
-          .container-projects .projects-right .projects-right-item-4 .right-item-4-text .name-list {
+          .container-projects .projects-down .projects-down-third .down-third-text .name-list {
             position: absolute;
             top: 10%;
             left: 2%;
@@ -919,7 +895,7 @@
             text-align: center;
             display: none; } }
         @media screen and (max-width: 480px) and (min-width: 320px) {
-          .container-projects .projects-right .projects-right-item-4 .right-item-4-text .name-list {
+          .container-projects .projects-down .projects-down-third .down-third-text .name-list {
             position: absolute;
             top: 10%;
             left: 2%;
@@ -929,53 +905,53 @@
             text-align: center;
             display: none; } }
         @media screen and (max-width: 768px) and (min-width: 481px) {
-          .container-projects .projects-right .projects-right-item-4 .right-item-4-text .name-list .pop-up-link {
+          .container-projects .projects-down .projects-down-third .down-third-text .name-list .pop-up-link {
             font: 14px Roboto-Condensed-Regular;
             color: #fff;
             font-weight: 400;
             text-transform: uppercase;
             line-height: 30px;
             margin: 40px; }
-            .container-projects .projects-right .projects-right-item-4 .right-item-4-text .name-list .pop-up-link:hover {
+            .container-projects .projects-down .projects-down-third .down-third-text .name-list .pop-up-link:hover {
               text-decoration: underline;
               color: #fff; }
-              .container-projects .projects-right .projects-right-item-4 .right-item-4-text .name-list .pop-up-link:hover:hover:before {
+              .container-projects .projects-down .projects-down-third .down-third-text .name-list .pop-up-link:hover:hover:before {
                 content: "";
                 margin-left: 0;
                 padding-right: 0;
                 padding-left: 0; } }
         @media screen and (max-width: 480px) and (min-width: 320px) {
-          .container-projects .projects-right .projects-right-item-4 .right-item-4-text .name-list .pop-up-link {
+          .container-projects .projects-down .projects-down-third .down-third-text .name-list .pop-up-link {
             font: 14px Roboto-Condensed-Regular;
             color: #fff;
             font-weight: 400;
             text-transform: uppercase;
             line-height: 30px;
             margin: 40px; }
-            .container-projects .projects-right .projects-right-item-4 .right-item-4-text .name-list .pop-up-link:hover {
+            .container-projects .projects-down .projects-down-third .down-third-text .name-list .pop-up-link:hover {
               text-decoration: underline;
               color: #fff; }
-              .container-projects .projects-right .projects-right-item-4 .right-item-4-text .name-list .pop-up-link:hover:hover:before {
+              .container-projects .projects-down .projects-down-third .down-third-text .name-list .pop-up-link:hover:hover:before {
                 content: "";
                 margin-left: 0;
                 padding-right: 0;
                 padding-left: 0; } }
-        .container-projects .projects-right .projects-right-item-4 .right-item-4-text .name-list .close-icon {
+        .container-projects .projects-down .projects-down-third .down-third-text .name-list .close-icon {
           display: none; }
           @media screen and (max-width: 768px) and (min-width: 481px) {
-            .container-projects .projects-right .projects-right-item-4 .right-item-4-text .name-list .close-icon {
+            .container-projects .projects-down .projects-down-third .down-third-text .name-list .close-icon {
               display: block;
               font-size: 30px;
               color: #fff;
               cursor: pointer; } }
           @media screen and (max-width: 480px) and (min-width: 320px) {
-            .container-projects .projects-right .projects-right-item-4 .right-item-4-text .name-list .close-icon {
+            .container-projects .projects-down .projects-down-third .down-third-text .name-list .close-icon {
               display: block;
               font-size: 30px;
               color: #fff;
               cursor: pointer; } }
 
-/*---END OF PROJECT---*/
+/*---END OF PROJECTS---*/
 /*---STUDIO---*/
 .row-studio {
   background-color: #E9EAE2; }
@@ -985,9 +961,6 @@
   .row-studio .studio-name {
     background: -webkit-linear-gradient(137deg, #FF9B6D 49.5%, #fff 49.5%, #FF9B6D 50%);
     background: linear-gradient(-47deg, #FF9B6D 49.5%, #fff 49.5%, #FF9B6D 50%); }
-    @media screen and (max-width: 1200px) and (min-width: 993px) {
-      .row-studio .studio-name {
-        height: 400px; } }
     @media screen and (max-width: 992px) and (min-width: 769px) {
       .row-studio .studio-name {
         background: #FF9B6D; } }
@@ -1318,21 +1291,7 @@
       padding: 40px;
       background: #E9EAE2; } }
   .footer-map iframe {
-    width: 100%;
-    height: 100%;
-    height: 625px; }
-    @media screen and (max-width: 1200px) and (min-width: 993px) {
-      .footer-map iframe {
-        height: 522px; } }
-    @media screen and (max-width: 992px) and (min-width: 769px) {
-      .footer-map iframe {
-        height: 368px; } }
-    @media screen and (max-width: 768px) and (min-width: 481px) {
-      .footer-map iframe {
-        height: 300px; } }
-    @media screen and (max-width: 480px) and (min-width: 320px) {
-      .footer-map iframe {
-        height: 250px; } }
+    width: 100%; }
 
 .footer-info {
   background-color: #E9EAE2;
