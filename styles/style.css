@@ -820,6 +820,7 @@
           background: #EBB240; } }
       @media screen and (max-width: 480px) and (min-width: 320px) {
         .container-projects .projects-down .projects-down-third {
+          width: 100%;
           height: 50px;
           background: #EBB240; } }
       .container-projects .projects-down .projects-down-third .down-third-text {
@@ -958,7 +959,7 @@
   background-color: #E9EAE2; }
   @media screen and (max-width: 1200px) and (min-width: 993px) {
     .row-studio {
-      padding: 20px 0; } }
+      padding-bottom: 20px; } }
   .row-studio .studio-name {
     background: -webkit-linear-gradient(137deg, #FF9B6D 49.5%, #fff 49.5%, #FF9B6D 50%);
     background: linear-gradient(-47deg, #FF9B6D 49.5%, #fff 49.5%, #FF9B6D 50%); }
