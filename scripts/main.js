@@ -30,10 +30,25 @@ $(window).on("load resize", function() {
 
 	heightOwners.each(setHeightFromContentBlock);
 
+	var heightStudio = $(".height-studio-owner");
+
+	heightStudio.each(setHeightFromContentStudio);
+
 });
 
 function setHeightFromContentBlock() {
 	if ($(document).width() > 768) {
+		$(this).find(".block-height-resize").removeAttr("style");
+		var height = $(this).height();
+		$(this).find(".block-height-resize").height(height);
+	} else {
+		$(this).find(".block-height-resize").removeAttr("style");
+	}
+	
+}
+
+function setHeightFromContentStudio() {
+	if ($(document).width() > 992) {
 		$(this).find(".block-height-resize").removeAttr("style");
 		var height = $(this).height();
 		$(this).find(".block-height-resize").height(height);
