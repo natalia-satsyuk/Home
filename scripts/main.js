@@ -14,3 +14,21 @@ $(".project-menu-icon").click(function() {
 $(".close-icon").click(function() {
 	$(".pop-up-list").slideUp(400);
 });
+
+$(window).on("load resize", function() {
+	var heightOwners = $(".block-height-owner");
+
+	heightOwners.each(setHeightFromContentBlock);
+
+});
+
+function setHeightFromContentBlock() {
+	if ($(document).width() > 768) {
+		$(this).find(".block-height-resize").removeAttr("style")
+		var height = $(this).height();
+		$(this).find(".block-height-resize").height(height);
+	} else {
+		$(this).find(".block-height-resize").removeAttr("style");
+	}
+	
+}
