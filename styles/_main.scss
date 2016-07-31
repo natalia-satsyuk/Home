@@ -629,17 +629,17 @@ $adress_font: 13px Roboto-Condensed-Regular;
 
 	.header-adress {
 		position: absolute;
-		bottom: 180px;
-		left: 45px;
+		bottom: 40%;
+		left: 14%;
 
 		@media screen and (max-width: 1200px) and (min-width: 993px){
-			bottom: 150px;
-    		left: 20px;
+			bottom: 38%;
+    		left: 7%;
 		}
 
 		@media screen and (max-width: 992px) and (min-width: 769px){
-			bottom: 70px;
-			left: 25px;
+			bottom: 30%;
+			left: 28%;
 		}
 
 		@media screen and (max-width: 768px) and (min-width: 320px){
@@ -649,12 +649,12 @@ $adress_font: 13px Roboto-Condensed-Regular;
 
 	.header-number {
 		position: absolute;
-		bottom: 102px;
-		left: 138px;
+		bottom: 23%;
+		left: 41%;
 
 		@media screen and (max-width: 992px) and (min-width: 769px){
-			bottom: 25px;
-			left: 25px;
+			bottom: 10%;
+			left: 28%;
 		}
 
 		@media screen and (max-width: 768px) and (min-width: 320px){
@@ -1035,6 +1035,10 @@ $adress_font: 13px Roboto-Condensed-Regular;
 
 	.projects-down {
 			overflow: hidden;
+
+			@media screen and (max-width: 768px) and (min-width: 320px){
+				overflow: inherit;
+			}			
 
 		.projects-down-first {
 			width: 49%;
