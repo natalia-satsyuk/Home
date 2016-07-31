@@ -1231,13 +1231,14 @@ $adress_font: 13px Roboto-Condensed-Regular;
 
 .row-studio {
 	background-color: #E9EAE2;
+	padding-bottom: 40px;
 
 	@media screen and (max-width: 1200px) and (min-width: 993px){
 		padding-bottom: 20px;	
 	}
 
 	.studio-name {
-		background: linear-gradient(-47deg, #FF9B6D 49.5%, #fff 49.5%, #FF9B6D 50%);
+		background: linear-gradient(-52deg, #FF9B6D 49.5%, #fff 49.5%, #FF9B6D 50%);
 		
 		@media screen and (max-width: 992px) and (min-width: 769px){
 			background: #FF9B6D;
@@ -1577,7 +1578,7 @@ $adress_font: 13px Roboto-Condensed-Regular;
 	}
 
 	.news-name {
-		background: linear-gradient(-47deg, #D4EDBF 49.5%, #fff 49.5%, #D4EDBF 50%);
+		background: linear-gradient(-43deg, #D4EDBF 49.5%, #fff 49.5%, #D4EDBF 50%);
 		
 
 		@media screen and (max-width: 992px) and (min-width: 769px){

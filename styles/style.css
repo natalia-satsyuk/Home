@@ -959,13 +959,14 @@
 /*---END OF PROJECTS---*/
 /*---STUDIO---*/
 .row-studio {
-  background-color: #E9EAE2; }
+  background-color: #E9EAE2;
+  padding-bottom: 40px; }
   @media screen and (max-width: 1200px) and (min-width: 993px) {
     .row-studio {
       padding-bottom: 20px; } }
   .row-studio .studio-name {
-    background: -webkit-linear-gradient(137deg, #FF9B6D 49.5%, #fff 49.5%, #FF9B6D 50%);
-    background: linear-gradient(-47deg, #FF9B6D 49.5%, #fff 49.5%, #FF9B6D 50%); }
+    background: -webkit-linear-gradient(142deg, #FF9B6D 49.5%, #fff 49.5%, #FF9B6D 50%);
+    background: linear-gradient(-52deg, #FF9B6D 49.5%, #fff 49.5%, #FF9B6D 50%); }
     @media screen and (max-width: 992px) and (min-width: 769px) {
       .row-studio .studio-name {
         background: #FF9B6D; } }
@@ -1207,8 +1208,8 @@
     .row-news {
       border-bottom: 1px solid #DEB887; } }
   .row-news .news-name {
-    background: -webkit-linear-gradient(137deg, #D4EDBF 49.5%, #fff 49.5%, #D4EDBF 50%);
-    background: linear-gradient(-47deg, #D4EDBF 49.5%, #fff 49.5%, #D4EDBF 50%); }
+    background: -webkit-linear-gradient(133deg, #D4EDBF 49.5%, #fff 49.5%, #D4EDBF 50%);
+    background: linear-gradient(-43deg, #D4EDBF 49.5%, #fff 49.5%, #D4EDBF 50%); }
     @media screen and (max-width: 992px) and (min-width: 769px) {
       .row-news .news-name {
         background: #D4EDBF;
